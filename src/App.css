@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+body {
+    background-color: #0093E9;
+background-image: linear-gradient(90deg, #0093E9 0%, #91c9c2 50%, #11c7c7 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.todo {
+    background-color: none;
+    border: solid 1px rgb(16, 46, 87);
+    border-radius: 30px;
+    box-shadow: rgb(16, 46, 87) 0px 2px 15px;
+    min-height: 80vh;
+    width: 500px;
+    margin: 20px auto; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.crossed {
+    text-decoration: line-through 2px rgb(252, 69, 69);
+    background-color: #ffd4b0;
+    border-radius: 10px;
+    -webkit-text-decoration-line: line-through;
+    -webkit-text-decoration-color: rgb(252, 69, 69);
+    -webkit-text-decoration-thickness: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul, li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-add {
+    background: #c4f87c;
+    margin-top: 20px;
+}
+.btn-delete {
+    background: #fd9191;
+    margin-bottom: 5px;
+}
+
+.btn-add, .btn-delete {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    color: black;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    border: none;
+}
+
+.mainpic {
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.mainpic2 {
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+
+
+
+@media (max-width: 550px) {
+    .todo {
+        width: 95%;
+        margin: 10px auto; 
+    }
 }
